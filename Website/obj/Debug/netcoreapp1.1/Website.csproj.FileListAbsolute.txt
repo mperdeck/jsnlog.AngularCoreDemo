@@ -1,0 +1,9 @@
+C:\Dev\JSNLog\jsnlog.AngularCoreDemo\Website\bin\Debug\netcoreapp1.1\Website.deps.json
+C:\Dev\JSNLog\jsnlog.AngularCoreDemo\Website\bin\Debug\netcoreapp1.1\Website.runtimeconfig.json
+C:\Dev\JSNLog\jsnlog.AngularCoreDemo\Website\bin\Debug\netcoreapp1.1\Website.runtimeconfig.dev.json
+C:\Dev\JSNLog\jsnlog.AngularCoreDemo\Website\obj\Debug\netcoreapp1.1\Website.AssemblyInfo.cs
+C:\Dev\JSNLog\jsnlog.AngularCoreDemo\Website\obj\Debug\netcoreapp1.1\Website.csprojResolveAssemblyReference.cache
+C:\Dev\JSNLog\jsnlog.AngularCoreDemo\Website\bin\Debug\netcoreapp1.1\Website.dll
+C:\Dev\JSNLog\jsnlog.AngularCoreDemo\Website\bin\Debug\netcoreapp1.1\Website.pdb
+C:\Dev\JSNLog\jsnlog.AngularCoreDemo\Website\obj\Debug\netcoreapp1.1\Website.dll
+C:\Dev\JSNLog\jsnlog.AngularCoreDemo\Website\obj\Debug\netcoreapp1.1\Website.pdb

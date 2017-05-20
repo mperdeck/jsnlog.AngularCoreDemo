@@ -1,0 +1,8 @@
+C:\Dev\JSNLog\jsnlog.AngularCoreDemo\Website\wwwroot\js\app\app.component.js
+C:\Dev\JSNLog\jsnlog.AngularCoreDemo\Website\wwwroot\js\app\app.component.js.map
+C:\Dev\JSNLog\jsnlog.AngularCoreDemo\Website\wwwroot\js\app\home.component.js
+C:\Dev\JSNLog\jsnlog.AngularCoreDemo\Website\wwwroot\js\app\home.component.js.map
+C:\Dev\JSNLog\jsnlog.AngularCoreDemo\Website\wwwroot\js\app\app.module.js
+C:\Dev\JSNLog\jsnlog.AngularCoreDemo\Website\wwwroot\js\app\app.module.js.map
+C:\Dev\JSNLog\jsnlog.AngularCoreDemo\Website\wwwroot\js\app\main.js
+C:\Dev\JSNLog\jsnlog.AngularCoreDemo\Website\wwwroot\js\app\main.js.map
