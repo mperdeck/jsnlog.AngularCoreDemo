@@ -32,16 +32,16 @@
         </p>
         <p>
             <b>Message</b><br />
-            <input type="text" id="message">
+            <input type="text" [(ngModel)]="message">
         </p>
         <p>
             <b>Severity</b><br />
-            <input type="radio" name="severity" id="trace" value="Trace">Trace
-            <input type="radio" name="severity" id="debug" value="Debug">Debug
-            <input type="radio" name="severity" id="info" value="Info">Info
-            <input type="radio" name="severity" id="warn" value="Warn">Warn
-            <input type="radio" name="severity" id="error" value="Error" checked>Error
-            <input type="radio" name="severity" id="fatal" value="Fatal">Fatal
+            <input type="radio" [(ngModel)]="severity" name="severity" id="trace" value="Trace">Trace
+            <input type="radio" [(ngModel)]="severity" name="severity" id="debug" value="Debug">Debug
+            <input type="radio" [(ngModel)]="severity" name="severity" id="info" value="Info">Info
+            <input type="radio" [(ngModel)]="severity" name="severity" id="warn" value="Warn">Warn
+            <input type="radio" [(ngModel)]="severity" name="severity" id="error" value="Error" checked>Error
+            <input type="radio" [(ngModel)]="severity" name="severity" id="fatal" value="Fatal">Fatal
         </p>
         <p>
             <button (click)="LogMessage()">Log message</button>

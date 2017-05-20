@@ -7,6 +7,9 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
+    message: string;
+    severity: string;
+
     constructor() {
     }
 
@@ -21,6 +24,8 @@ export class HomeComponent implements OnInit {
     LogMessage() {
         alert(444)
 
+        alert(this.message)
+        alert(this.severity)
 
         var message = document.getElementById('message').value;
 
