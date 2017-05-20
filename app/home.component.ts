@@ -7,8 +7,8 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-    message: string;
-    severity: string;
+    message: string = "some log message";
+    severity: string = "Error";
 
     constructor() {
     }
@@ -17,24 +17,33 @@ export class HomeComponent implements OnInit {
     }
 
     GenerateException() {
-        // Try to access variable that doesn't exist
-        var x = xyz;
+        throw "*** client side exception ***";
     }
 
     LogMessage() {
-        alert(444)
 
-        alert(this.message)
-        alert(this.severity)
-
-        var message = document.getElementById('message').value;
-
-        if (document.getElementById('trace').checked) { console.log("trace " + message); JL().trace(message); }
-        if (document.getElementById('debug').checked) { console.log("debug " + message); JL().debug(message); }
-        if (document.getElementById('info').checked) { console.log("info " + message); JL().info(message); }
-        if (document.getElementById('warn').checked) { console.log("warn " + message); JL().warn(message); }
-        if (document.getElementById('error').checked) { console.log("error " + message); JL().error(message); }
-        if (document.getElementById('fatal').checked) { console.log("fatal " + message); JL().fatal(message); }
+        switch (this.severity) {
+            case "Trace":
+                console.log("Trace " + this.message); JL().trace(this.message);
+                break;
+            case "Debug":
+                console.log("Debug " + this.message); JL().debug(this.message);
+                break;
+            case "Info":
+                console.log("Info " + this.message); JL().info(this.message);
+                break;
+            case "Warn":
+                console.log("Warn " + this.message); JL().warn(this.message);
+                break;
+            case "Error":
+                console.log("Error " + this.message); JL().error(this.message);
+                break;
+            case "Fatal":
+                console.log("Fatal " + this.message); JL().fatal(this.message);
+                break;
+            default:
+                throw "Unknown severity " + this.severity;
+        }
     }
 }
 
