@@ -24,27 +24,21 @@ let HomeComponent = class HomeComponent {
         switch (this.severity) {
             case "Trace":
                 console.log("Trace " + this.message);
-                JL().trace(this.message);
                 break;
             case "Debug":
                 console.log("Debug " + this.message);
-                JL().debug(this.message);
                 break;
             case "Info":
                 console.log("Info " + this.message);
-                JL().info(this.message);
                 break;
             case "Warn":
                 console.log("Warn " + this.message);
-                JL().warn(this.message);
                 break;
             case "Error":
                 console.log("Error " + this.message);
-                JL().error(this.message);
                 break;
             case "Fatal":
                 console.log("Fatal " + this.message);
-                JL().fatal(this.message);
                 break;
             default:
                 throw "Unknown severity " + this.severity;
