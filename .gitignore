@@ -169,3 +169,5 @@ pip-log.txt
 .DS_Store
 
 node_modules/
+wwwroot/
+
