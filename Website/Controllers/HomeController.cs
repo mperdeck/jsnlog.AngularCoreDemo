@@ -16,7 +16,7 @@ namespace WebSite.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index2()
         {
             _logger.LogInformation(">>>>>> Server side logging");
 
