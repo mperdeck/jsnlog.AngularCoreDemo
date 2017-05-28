@@ -39,6 +39,7 @@ namespace Website
             //var jsnlogConfiguration = new JsnlogConfiguration();
             //app.UseJSNLog(new LoggingAdapter(loggerFactory), jsnlogConfiguration);
 
+            app.UseDefaultFiles(); // allow index.html to be served as the default file
             app.UseStaticFiles();
 
             app.UseMvc(routes =>
