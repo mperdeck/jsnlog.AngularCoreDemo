@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using JSNLog;
 
 namespace Website
 {
@@ -36,8 +37,8 @@ namespace Website
             }
 
             // Configure JSNLog
-            //var jsnlogConfiguration = new JsnlogConfiguration();
-            //app.UseJSNLog(new LoggingAdapter(loggerFactory), jsnlogConfiguration);
+            var jsnlogConfiguration = new JsnlogConfiguration();
+            app.UseJSNLog(new LoggingAdapter(loggerFactory), jsnlogConfiguration);
 
             app.UseDefaultFiles(); // allow index.html to be served as the default file
             app.UseStaticFiles();
