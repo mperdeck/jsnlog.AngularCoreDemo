@@ -19,4 +19,8 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.2" />
   </ItemGroup>
 
+  <Target Name="RunWebpack" AfterTargets="Build">
+    <Exec Condition="$(Configuration) == 'Debug'" Command="npm run build:dev" />
+    <Exec Condition="$(Configuration) == 'Release'" Command="npm run build" />
+  </Target>
 </Project>
