@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule }  from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
+import { JSNLogService } from './jsnlog/jsnlog.service';
 
 import { AppComponent } from './app.component';
 
@@ -9,6 +10,9 @@ import { AppComponent } from './app.component';
   ],
   declarations: [
     AppComponent
+  ],
+  providers: [
+      JSNLogService
   ],
   bootstrap: [ AppComponent ]
 })
