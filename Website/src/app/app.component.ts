@@ -17,7 +17,6 @@ export class AppComponent {
     }
 
     createLogItem() {
-        console.log('clicked create log item');
         this.jsnlog().info("clicked create log item");
     }
 
