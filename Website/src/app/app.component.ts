@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { JSNLogService } from './jsnlog/jsnlog.service';
 
 import '../assets/css/styles.css';
 
@@ -8,8 +9,16 @@ import '../assets/css/styles.css';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+    jsnlog: any;
+
+    constructor(jsnlogService: JSNLogService) {
+        this.jsnlog = jsnlogService.getJSNLog();
+    }
+
     createLogItem() {
         console.log('clicked create log item');
+        this.jsnlog().info("clicked create log item");
     }
 
     generateException() {
