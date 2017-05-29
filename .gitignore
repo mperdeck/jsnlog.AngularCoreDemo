@@ -69,6 +69,9 @@ project.lock.json
 .builds
 *.dotCover
 
+src/**/*.js
+src/**/*.js.map
+
 ## TODO: If you have NuGet Package Restore enabled, uncomment this
 packages/
 
