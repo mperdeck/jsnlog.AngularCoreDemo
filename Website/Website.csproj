@@ -5,9 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="src\assets\images\**" />
     <Compile Remove="wwwroot\js\**" />
+    <Content Remove="src\assets\images\**" />
     <Content Remove="wwwroot\js\**" />
+    <EmbeddedResource Remove="src\assets\images\**" />
     <EmbeddedResource Remove="wwwroot\js\**" />
+    <None Remove="src\assets\images\**" />
     <None Remove="wwwroot\js\**" />
   </ItemGroup>
   <ItemGroup>
@@ -17,9 +21,6 @@
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.2" />
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.2" />
     <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.2" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="src\assets\images\" />
   </ItemGroup>
 
   <Target Name="RunWebpack" AfterTargets="Build">
