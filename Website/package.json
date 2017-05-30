@@ -26,7 +26,6 @@
     "@angular/router": "~4.0.0",
     "@angular/tsc-wrapped": "~4.0.0",
     "@angular/upgrade": "~4.0.0",
-    "@types/jsnlog": "^2.17.2",
     "angular-in-memory-web-api": "~0.3.1",
     "core-js": "^2.4.1",
     "jsnlog": "^2.22.1",
