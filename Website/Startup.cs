@@ -37,6 +37,7 @@ namespace Website
             }
 
             // Configure JSNLog
+            // See http://jsnlog.com/Documentation/Configuration/JSNLog
             var jsnlogConfiguration = new JsnlogConfiguration()
             {
                 serverSideMessageFormat = "%newline>>>>>> LOG ITEM: %message%newline"
