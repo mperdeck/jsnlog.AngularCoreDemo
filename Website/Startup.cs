@@ -37,7 +37,11 @@ namespace Website
             }
 
             // Configure JSNLog
-            var jsnlogConfiguration = new JsnlogConfiguration();
+            var jsnlogConfiguration = new JsnlogConfiguration()
+            {
+                serverSideMessageFormat = "%newline>>>>>> LOG ITEM: %message%newline"
+            };
+
             app.UseJSNLog(new LoggingAdapter(loggerFactory), jsnlogConfiguration);
 
             app.UseDefaultFiles(); // allow index.html to be served as the default file
