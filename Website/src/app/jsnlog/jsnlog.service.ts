@@ -3,5 +3,5 @@ import { JL } from 'jsnlog';
 
 @Injectable()
 export class JSNLogService {
-    getJSNLog() { return JL; }
+    getJSNLog(): JL.JSNLog { return JL; }
 }
