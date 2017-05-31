@@ -18,7 +18,8 @@ export class AppComponent {
     }
 
     createLogItem() {
-        this.JL().info("clicked create log item");
+        this.JL().info("Will not be logged"); // Level has been set to WARN in app.module.ts.
+        this.JL().warn("clicked create log item button");
     }
 
     generateException() {
