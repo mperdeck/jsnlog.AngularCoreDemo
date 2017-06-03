@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 // Import definitions for the providers list
 import { JSNLogService } from './jsnlog/jsnlog.service';
 
+// Import definitions for the UncaughtExceptionHandler provider
 import { JL } from 'jsnlog';
 import { ErrorHandler } from '@angular/core';
 
