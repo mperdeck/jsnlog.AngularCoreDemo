@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { JSNLogService } from './jsnlog/jsnlog.service';
 import { JL } from 'jsnlog';
 
+import { Inject } from '@angular/core';
+import { JSNLOG } from './app.module';
+
 import '../assets/css/styles.css';
 
 @Component({
@@ -13,8 +16,8 @@ export class AppComponent {
 
     JL: JL.JSNLog;
 
-    constructor(jsnlogService: JSNLogService) {
-        this.JL = jsnlogService.getJSNLog();
+    constructor( @Inject('JSNLOG') JL: JL.JSNLog) {
+        this.JL = JL;
     }
 
     createLogItem() {

@@ -2,11 +2,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 // Import definitions for the providers list
-import { JSNLogService } from './jsnlog/jsnlog.service';
+import { InjectionToken } from '@angular/core';
+export let JSNLOG = new InjectionToken<JL.JSNLog>('jsnlog');
 
 // Import definitions for the UncaughtExceptionHandler provider
-import { JL } from 'jsnlog';
 import { ErrorHandler } from '@angular/core';
+import { JL } from 'jsnlog';
 
 import { AppComponent } from './app.component';
 
@@ -32,9 +33,12 @@ JL().setOptions({ "level": JL.getWarnLevel() });
     AppComponent
   ],
   providers: [
-      JSNLogService,
+      { provide: 'JSNLOG', useValue: JL },
       { provide: ErrorHandler, useClass: UncaughtExceptionHandler }
   ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
+
+
+
