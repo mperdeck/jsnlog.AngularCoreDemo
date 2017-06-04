@@ -1,11 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-// Import definitions for the providers list
-import { InjectionToken } from '@angular/core';
-export let JSNLOG = new InjectionToken<JL.JSNLog>('jsnlog');
-
-// Import definitions for the UncaughtExceptionHandler provider
 import { ErrorHandler } from '@angular/core';
 import { JL } from 'jsnlog';
 

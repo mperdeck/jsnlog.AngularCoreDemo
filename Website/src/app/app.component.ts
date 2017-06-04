@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { JSNLogService } from './jsnlog/jsnlog.service';
-import { JL } from 'jsnlog';
 
+// imports used to inject JSNLog and to use its functionality and typings
+import { JL } from 'jsnlog';
 import { Inject } from '@angular/core';
-import { JSNLOG } from './app.module';
 
 import '../assets/css/styles.css';
 
