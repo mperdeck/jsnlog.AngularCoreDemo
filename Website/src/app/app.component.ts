@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { JSNLogService } from './jsnlog/jsnlog.service';
 
 // imports used to inject JSNLog and to use its functionality and typings
 import { JL } from 'jsnlog';
@@ -16,6 +15,7 @@ export class AppComponent {
 
     JL: JL.JSNLog;
 
+    // JL.JSNLog is an interface describing the JSNLog library
     constructor( @Inject('JSNLOG') JL: JL.JSNLog) {
         this.JL = JL;
     }
